@@ -5,7 +5,7 @@ from wtforms import TextField,SubmitField
 from wtforms.validators import NumberRange
 import numpy as np 
 #from tensorflow.keras.models import load_model
-import joblib
+#import joblib
 
 
 #returning prediction
@@ -65,7 +65,7 @@ class scores(FlaskForm):
     inp14=TextField('tinp14')
     submit =SubmitField('Analyze')    
     
-@app.route('/' , methods=['POST'])
+@app.route('/', methods=['POST'])
 def index():
     form=scores()
     
