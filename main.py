@@ -65,7 +65,7 @@ class scores(FlaskForm):
     inp14=TextField('tinp14')
     submit =SubmitField('Analyze')    
     
-@app.route('/' , methods=['GET', 'POST'])
+@app.route('/' , methods=['POST'])
 def index():
     form=scores()
     
