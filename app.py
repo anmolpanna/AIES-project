@@ -47,7 +47,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'someRandomKey'
 
 #Loading the model
-final_model=pickle.load(open('model.pkl','rb'))
+#final_model=pickle.load(open('model.pkl','rb'))
 
 
 #creating a WTFORM class
