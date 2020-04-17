@@ -65,7 +65,7 @@ class scores(FlaskForm):
     inp14=TextField('tinp14')
     submit =SubmitField('Analyze')    
     
-@app.route('/', methods=['POST'])
+@app.route('/')
 def index():
     form=scores()
     
@@ -90,7 +90,7 @@ def index():
     return render_template('bookie.html', form=form)
  
 
-@app.route('/prediction')
+@app.route('/prediction', methods=['GET','POST'])
 def prediction():
     
     
