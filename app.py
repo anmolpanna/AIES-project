@@ -1,8 +1,5 @@
-from flask import Flask, render_template, session, redirect, request
 import pickle
-import numpy as np
-
-from flask import Flask, render_template, session, redirect, url_for, session
+from flask import Flask, render_template, session, redirect, url_for, request
 from flask_wtf import FlaskForm
 from wtforms import TextField,SubmitField
 from wtforms.validators import NumberRange
